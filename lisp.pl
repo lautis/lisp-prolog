@@ -1,3 +1,5 @@
+:- set_prolog_flag(double_quotes, codes).
+
 parse(String, Expr) :- phrase(lisp(Expr), String). % Parse lisp input to AST
 
 /**
